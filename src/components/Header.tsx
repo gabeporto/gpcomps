@@ -45,7 +45,7 @@ const NavLinks = styled.div<{ isOpen: boolean }>`
     display: ${({ isOpen }) => (isOpen ? 'flex' : 'none')};
     flex-direction: column;
     position: absolute;
-    top: ${({ isOpen }) => (isOpen ? '150px' : '60px')}; /* Ajuste a posição aqui */
+    top: ${({ isOpen }) => (isOpen ? '150px' : '60px')};
     left: 0;
     background-color: #444;
     width: 100%;
@@ -80,8 +80,8 @@ const MenuButton = styled.button<{ isOpen: boolean }>`
   }
 
   position: absolute;
-  top: ${({ isOpen }) => (isOpen ? '75px' : '75px')}; /* Ajuste a posição aqui */
-  right: 1rem;
+  top: ${({ isOpen }) => (isOpen ? '75px' : '75px')}; 
+  right: 4rem;
 `;
 
 function Header() {
