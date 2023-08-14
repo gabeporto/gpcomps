@@ -6,6 +6,10 @@ const HeaderContainer = styled.header`
   background-color: #181717;
   color: #fff;
   padding: 1rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 `;
 
 const HeaderContent = styled.div`
