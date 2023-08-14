@@ -32,8 +32,6 @@ const SectionContent = styled.div<{padding?: string}>`
 const SectionImage = styled.img<{imageOnRight?: boolean}>`
     min-width: 250px;
     max-width: 1000px;
-    float: ${props => (props.imageOnRight ? 'right' : 'left')};
-    order: ${props => (props.imageOnRight ? '2' : '1')};
     margin-bottom: 1rem;
     margin-top: 1rem;
 

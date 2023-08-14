@@ -41,6 +41,7 @@ const LogoImage = styled.img`
 const NavLinks = styled.div<{ isOpen: boolean }>`
   display: flex;
   gap: 1rem;
+  text-align: center;
 
   @media (max-width: 510px) {
     display: ${({ isOpen }) => (isOpen ? 'flex' : 'none')};
