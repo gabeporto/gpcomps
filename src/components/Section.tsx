@@ -2,7 +2,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const StyledSection = styled.div<{ backgroundColor: string, marginTop?: string, marginBottom?: string}>`
+const StyledSection = styled.div<{ backgroundColor: string, marginTop?: string, marginBottom?: string, imageOnRight?: boolean}>`
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -11,6 +11,10 @@ const StyledSection = styled.div<{ backgroundColor: string, marginTop?: string, 
   color: #fff;
   margin-top: ${props => props.marginTop || 0};
   margin-bottom: ${props => props.marginBottom || 0};
+
+  @media (max-width: 768px) {
+    margin-top: ${props => (props.imageOnRight ? '120px' : '0px')};
+  }
 `;
 
 const SectionContent = styled.div<{padding?: string}>`
@@ -28,7 +32,7 @@ const SectionContent = styled.div<{padding?: string}>`
 `;
 
 const SectionImage = styled.img<{imageOnRight?: boolean}>`
-  min-width: 250px;
+  min-width: 330px;
   max-width: 1000px;
   float: ${props => (props.imageOnRight ? 'right' : 'left')};
   order: ${props => (props.imageOnRight ? '2' : '1')};
@@ -66,7 +70,7 @@ interface SectionProps {
 
 const Section: React.FC<SectionProps> = ({ backgroundColor, imageSrc, title, text, marginTop, marginBottom, padding, imageOnRight }) => {
   return (
-    <StyledSection backgroundColor={backgroundColor} marginTop={marginTop} marginBottom={marginBottom}>
+    <StyledSection backgroundColor={backgroundColor} marginTop={marginTop} marginBottom={marginBottom} imageOnRight={imageOnRight}>
       <SectionContent padding={padding}>
         <SectionImage src={imageSrc} alt="Imagem" imageOnRight={imageOnRight}/>
         <SectionText>

@@ -13,16 +13,16 @@ function App() {
         backgroundColor="#181717"
         imageSrc="/assets/art1.png"
         title="Artes da Partida"
-        text="Perfeito para aumentar a visibilidade do jogador, promovendo a aumento do acompanhamento do atleta pelos torcedores."
+        text="💫 Perfeito para aumentar a visibilidade do jogador, promovendo a conexão entre torcedor e atleta."
         marginTop='200px'
         marginBottom='30px'
-        imageOnRight={false}
+        imageOnRight={true}
       />
       <SubSection
         backgroundColor="#272727"
         imageSrc="/assets/art2.png"
         title="Compilados das partidas"
-        text="Performance completa do jogador durante a partida, ótimo para acompanhar performance e aumentar a conexão com os torcedores."
+        text="⚽️ Performance completa do jogador durante a partida, ótimo para acompanhar performance e exibir o potencial para o mundo."
         padding='100px'
         imageOnRight={false}
       />
@@ -30,17 +30,19 @@ function App() {
         backgroundColor="#181717"
         imageSrc="/assets/art3.png"
         title="Material completo"
-        text="O mais procurado, o “DVD do Jogador”. O currículo profissional do atleta, essencial para análise dos olheiros e demais profissionais da comissão dos clubes."
+        text="📀 O mais procurado, o “DVD do Jogador”. O currículo profissional do atleta, essencial para análise dos olheiros e demais profissionais das comissões dos clubes."
         imageOnRight={false}
+        marginTop='50px'
+        marginBottom='50px'
       />
-      <Section
+      <SubSection
         backgroundColor="#272727"
-        imageSrc="/assets/art1.png"
-        title="Contato"
-        text="Entre em contato conosco."
+        imageSrc="/assets/gpcomps.png"
+        title="Impulsione a sua carreira!"
+        text="🚀 Mais de 4 anos trabalhando com atletas de alta performance, entre em contato pelas redes sociais e venha fazer parte do time!"
         imageOnRight={false}
+        marginBottom='100px'
       />
-      
     </PageContainer>
   );
 }

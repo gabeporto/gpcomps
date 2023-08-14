@@ -30,7 +30,7 @@ const SectionContent = styled.div<{padding?: string}>`
 `;
 
 const SectionImage = styled.img<{imageOnRight?: boolean}>`
-    min-width: 250px;
+    min-width: 330px;
     max-width: 1000px;
     margin-bottom: 1rem;
     margin-top: 1rem;
