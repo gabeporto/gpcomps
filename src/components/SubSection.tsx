@@ -17,19 +17,31 @@ const SectionContent = styled.div<{padding?: string}>`
   display: flex;
   align-items: center;
   width: 100%;
+  flex-direction: row;
   max-width: 1200px;
   margin: 0 auto;
   padding: ${props => props.padding || 0};
+
+
+  @media (max-width: 768px) {
+    padding: 0px;
+    flex-direction: column;
+  }
 `;
 
 const SectionImage = styled.img<{imageOnRight?: boolean}>`
   width: 65%;
+  min-width: 250px;
   max-width: 1000px;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+
 `;
 
 const SectionText = styled.div`
-  width: 60%;
+  width: 100%;
   padding-left: 2rem;
+  padding-right: 2rem;
   color: #CBC8C8;
 `;
 

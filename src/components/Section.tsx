@@ -16,22 +16,31 @@ const StyledSection = styled.div<{ backgroundColor: string, marginTop?: string, 
 const SectionContent = styled.div<{padding?: string}>`
   display: flex;
   align-items: center;
+  flex-direction: row;
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   padding: ${props => props.padding || 0};
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
 const SectionImage = styled.img<{imageOnRight?: boolean}>`
   width: 65%;
+  min-width: 250px;
   max-width: 1000px;
   float: ${props => (props.imageOnRight ? 'right' : 'left')};
   order: ${props => (props.imageOnRight ? '2' : '1')};
+  margin-bottom: 1rem;
+  margin-top: 1rem;
 `;
 
 const SectionText = styled.div`
-  width: 60%;
+  width: 100%;
   padding-left: 2rem;
+  padding-right: 2rem;
   color: #CBC8C8;
 `;
 

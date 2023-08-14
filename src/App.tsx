@@ -24,23 +24,20 @@ function App() {
         title="Compilados das partidas"
         text="Performance completa do jogador durante a partida, ótimo para acompanhar performance e aumentar a conexão com os torcedores."
         padding='100px'
-        imageOnRight={true}
+        imageOnRight={false}
       />
       <Section
         backgroundColor="#181717"
         imageSrc="/assets/art3.png"
         title="Material completo"
         text="O mais procurado, o “DVD do Jogador”. O currículo profissional do atleta, essencial para análise dos olheiros e demais profissionais da comissão dos clubes."
-        padding='100px'
         imageOnRight={false}
       />
       <Section
         backgroundColor="#272727"
-        imageSrc="/assets/art4.png"
+        imageSrc="/assets/art1.png"
         title="Contato"
         text="Entre em contato conosco."
-        marginTop='200px'
-        marginBottom='30px'
         imageOnRight={false}
       />
       
