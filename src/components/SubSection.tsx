@@ -25,8 +25,6 @@ const SectionContent = styled.div<{padding?: string}>`
 const SectionImage = styled.img<{imageOnRight?: boolean}>`
   width: 65%;
   max-width: 1000px;
-  float: ${props => (props.imageOnRight ? 'right' : 'left')};
-  order: ${props => (props.imageOnRight ? '2' : '1')};
 `;
 
 const SectionText = styled.div`
@@ -52,7 +50,7 @@ interface SectionProps {
   imageOnRight?: boolean;
 }
 
-const Section: React.FC<SectionProps> = ({ backgroundColor, imageSrc, title, text, marginTop, marginBottom, padding, imageOnRight }) => {
+const SubSection: React.FC<SectionProps> = ({ backgroundColor, imageSrc, title, text, marginTop, marginBottom, padding, imageOnRight }) => {
   return (
     <StyledSection backgroundColor={backgroundColor} marginTop={marginTop} marginBottom={marginBottom}>
       <SectionContent padding={padding}>
@@ -66,4 +64,4 @@ const Section: React.FC<SectionProps> = ({ backgroundColor, imageSrc, title, tex
   );
 };
 
-export default Section;
+export default SubSection;
