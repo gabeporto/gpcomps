@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
+import { FaYoutube, FaInstagram } from 'react-icons/fa';
 
 const HeaderContainer = styled.header`
   position: relative;
@@ -54,7 +55,7 @@ const NavLinks = styled.div<{ isOpen: boolean }>`
   }
 `;
 
-const NavLink = styled.a`
+const YouTubeIcon = styled(FaYoutube)`
   text-transform: uppercase;
   font-family: 'Alata', sans-serif;
   font-size: 16px;
@@ -62,6 +63,22 @@ const NavLink = styled.a`
   color: #fff;
   margin-right: 20px;
   transition: color 0.2s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    color: #BBBBBB; 
+  }
+`;
+
+const InstagramIcon = styled(FaInstagram)`
+  text-transform: uppercase;
+  font-family: 'Alata', sans-serif;
+  font-size: 16px;
+  text-decoration: none;
+  color: #fff;
+  margin-right: 20px;
+  transition: color 0.2s ease-in-out;
+  cursor: pointer;
 
   &:hover {
     color: #BBBBBB; 
@@ -101,9 +118,12 @@ function Header() {
           {isOpen ? '✕' : '☰'}
         </MenuButton>
         <NavLinks isOpen={isOpen}>
-          <NavLink href="#">Sobre nós</NavLink>
-          <NavLink href="#">Serviços</NavLink>
-          <NavLink href="#">Contato</NavLink>
+          <a href="https://www.youtube.com/@gpcomps" target="_blank" rel="noopener noreferrer">
+            <YouTubeIcon size={25}/>
+          </a>
+          <a href="https://www.instagram.com/gp.comps" target="_blank" rel="noopener noreferrer">
+          <InstagramIcon size={25}/>
+          </a>
         </NavLinks>
       </HeaderContent>
     </HeaderContainer>
