@@ -21,8 +21,8 @@ function App() {
       <SubSection
         backgroundColor="#272727"
         imageSrc="/assets/art2.png"
-        title="Compilados das partidas"
-        text="⚽️ Performance completa do jogador durante a partida, ótimo para acompanhar performance e exibir o potencial para o mundo."
+        title="Compilado da partida"
+        text="⚽️ Performance completa do jogador durante cada partida, ótimo para acompanhar performance e exibir o potencial para o mundo."
         padding='100px'
         imageOnRight={false}
       />
